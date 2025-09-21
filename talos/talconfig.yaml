@@ -22,7 +22,7 @@ nodes:
   - hostname: "k8s-1"
     ipAddress: "192.168.8.226"
     installDiskSelector:
-      serial: "nvme0n1"
+      serial: "S3ESNX0K465233E"
     machineSpec:
       secureboot: true
     talosImageURL: factory.talos.dev/installer-secureboot/e3fab82b561b5e559cdf1c0b1e5950c0e52700b9208a2cfaa5b18454796f3a7e
