@@ -1,0 +1,19 @@
+machine:
+  filesystems:
+    - device: /dev/disk/by-id/ata-Samsung_SSD_870_EVO_4TB_S6PJNJ0W408334H
+      format:
+        type: ext4
+      mountpoint: /var/mnt/ssd
+  kubelet:
+    extraMounts:
+      - destination: /var/mnt/ssd
+        type: bind
+        source: /var/mnt/ssd
+        options:
+          - bind
+          - rshared
+          - rw
+  disks:
+      - device: /dev/sda
+        partitions:
+          - mountpoint: /var/mnt/ssd
