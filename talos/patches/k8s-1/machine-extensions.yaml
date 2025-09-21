@@ -1,5 +1,4 @@
 machine:
-  kernel:
-    modules:
-      blacklist:
-        - qemu-guest-agent
+  install:
+    extensions:
+      - siderolabs/qemu-guest-agent
